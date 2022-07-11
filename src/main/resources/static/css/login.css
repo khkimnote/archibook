@@ -1,0 +1,60 @@
+*{box-sizing: border-box;}
+.idpw {
+    text-align: center;
+}
+.login {
+    padding: 10px;
+    width :300px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+
+}
+.login_id{
+    margin-top: 30px;
+    margin-bottom: 7px;
+}
+.mainlogin{
+    padding: 60px;
+    text-align:center;
+    padding-bottom: 3%;
+    font-size:30px;
+    margin: 0 30% 0 30%;
+    border-bottom: solid 7px #F5F4F5;
+}
+.tur{
+    width: 40px;
+    height: 60px;
+}
+.submit{
+    background-color: red;
+    color:white;
+    border:0px;
+    border-radius: 4px;
+    width: 70px;
+    height: 23px;
+    line-height: 23px;
+    margin-top: 14px;
+}
+
+
+
+.findall{
+    text-align: center;
+    display: block;
+    padding: 0;
+
+}
+.finding{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+
+}
+.findId{
+    margin-left: 0;
+}
+
+.finding > a{
+    text-decoration: none;
+}

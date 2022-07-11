@@ -6,13 +6,12 @@
 -->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>아카이북 | 로그인</title>
     <meta charset="utf-8" />
+    <title>아카이북 | 회원가입</title>
+    <link rel="stylesheet" href="../../static/css/join.css">
 
 </head>
-<style>
 
-</style>
 <body class="homepage is-preload">
 <div id="page-wrapper">
 
@@ -21,14 +20,43 @@
             <div class="inner">
 
                 <!-- Main -->
+
                 <section class="main">
-                    <header class="major">
-                        <h1 style="text-align:center;padding-bottom: 3%;font-size:30px;margin: 0 30% 0 30%; border-bottom: solid 7px #F5F4F5;">아카이북 로그인<img src="g" width="40" height="60"></h1>
-                    </header>
-                    <h1>수정 1 _ 2022.07.10</h1>
+                    <form action="">
+                        <div class="radio">
+                            <input type="radio" name= "conBus" id="cons">
+                            <label for="cons"> 일반회원</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio"  name= "conBus" id="buss">
+                            <label for="buss"> 기업회원</label>
+                        </div>
+
+                        <p class= "id">아이디</p>
+                        <input class ="idpw" type="text" placeholder="6자 이상의 영문과 숫자를 조합">
+                        <p class = "pw">비밀번호</p>
+                        <input class ="idpw" type="password" placeholder="영문 4자이상, 최대 20자">
+                        <p class ="nm">이름</p>
+                        <input class ="name" type="text">
+
+
+                        <p class ="nm">핸드폰 번호</p>
+                        <input class ="number" type="text" maxlength="13" placeholder="핸드폰번호">
+                        <div class = "receive"> 인증번호 받기 </div>
+                        <input class ="number" type="text" maxlength="13" placeholder="인증번호를 입력하세요">
+                        <div class = "check"> 인증번호 확인 </div>
+
+                        <input type="submit" value="가입 완료">
+                        <div class= "cancel">취소</div>
+
+
+
+
+
+                    </form>
 
 
                 </section>
+
 
             </div>
         </div>

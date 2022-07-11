@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:lightpink;
+}
+.main{
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    width: 380px;
+    /* text-align: center; */
+}
+
+.radio{
+    text-align: center;
+}
+
+.id, .pw, .nm{
+    text-align: left;
+    width: 340px;
+    margin: 25px auto 3px
+}
+
+.idpw, .name, .number{
+    width: 340px;
+}
+.name, .number{
+    width: 200px;
+    text-align: left;
+
+}
+
+.check, .receive{
+    display:inline-block;
+    width: 110px;
+    height: 25px;
+    background-color: coral;
+    border-radius: 8px;
+    font-size:12px;
+    text-align: center;
+    line-height: 25px;
+}
