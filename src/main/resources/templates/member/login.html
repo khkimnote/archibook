@@ -1,14 +1,10 @@
 <!DOCTYPE HTML>
-<!--
-   Helios by Pixelarity
-   pixelarity.com | hello@pixelarity.com
-   License: pixelarity.com/license
--->
+
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8" />
-    <title>아카이북 | 회원가입</title>
-    <link rel="stylesheet" href="../../static/css/join.css">
+    <title>아카이북 | 로그인</title>
+    <link rel="stylesheet" href="../../static/css/login.css">
 
 </head>
 
@@ -16,50 +12,31 @@
 <div id="page-wrapper">
 
     <section>
-        <div class="wrapper">
-            <div class="inner">
+        <div class="mainlogin"> 기북천사 로그인 <img class="tur" src="../../static/images/qna.png" alt="모나리자">
+            <div>
 
                 <!-- Main -->
-
+                
                 <section class="main">
-                    <form action="">
-                        <div class="radio">
-                            <input type="radio" name= "conBus" id="cons">
-                            <label for="cons"> 일반회원</label>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio"  name= "conBus" id="buss">
-                            <label for="buss"> 기업회원</label>
-                        </div>
-
-                        <p class= "id">아이디</p>
-                        <input class ="idpw" type="text" placeholder="6자 이상의 영문과 숫자를 조합">
-                        <p class = "pw">비밀번호</p>
-                        <input class ="idpw" type="password" placeholder="영문 4자이상, 최대 20자">
-                        <p class ="nm">이름</p>
-                        <input class ="name" type="text">
-
-
-                        <p class ="nm">핸드폰 번호</p>
-                        <input class ="number" type="text" maxlength="13" placeholder="핸드폰번호">
-                        <div class = "receive"> 인증번호 받기 </div>
-                        <input class ="number" type="text" maxlength="13" placeholder="인증번호를 입력하세요">
-                        <div class = "check"> 인증번호 확인 </div>
-
-                        <input type="submit" value="가입 완료">
-                        <div class= "cancel">취소</div>
-
-
-
-
-
-                    </form>
-
-
-                </section>
-
+                  
+                </section> 
 
             </div>
+            
         </div>
+        <div class="idpw">
+            <p><input type="text" class="login" placeholder="아이디"><p>
+            <input type="password" class="login" placeholder="패스워드"><p>
+            <button type="password" class="submit" >로그인
+        </div>
+
+        <ol class="findall">
+            <li class="finding findId">아이디 찾기</li><span>|</span>
+            <li class="finding">비밀번호 찾기</li><span>|</span>
+            <li class="finding">회원가입</li>
+        </ol> 
+
+
     </section>
 
 

@@ -48,7 +48,8 @@
 .finding{
     list-style: none;
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 10px;
+    margin-right: 15px;
 
 }
 .findId{
@@ -58,3 +59,5 @@
 .finding > a{
     text-decoration: none;
 }
+
+
