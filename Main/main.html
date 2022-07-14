@@ -9,7 +9,7 @@
         list-style: none;
     }
     .main_1{
-        position: absolute;
+        position: absolute; /* 22:55 */
         top: 0px;
         padding-top: 20px;
         /* 한 화면 세로 760px */
@@ -51,6 +51,7 @@
         top: 0;
         left: 0; 
         right: 0;
+        z-index: 2;
 
         height: 15px;
         padding: 20px;
@@ -100,9 +101,35 @@
     .menu .menu_2{display:none; position:relative; top:-10px; left:0; right:0; text-align:center;}
     .menu .menu_2 a{display:block; padding:5px; background:red; color:#fff;}
 
-    .down_btn{
-        z-index: 1;
+    .menu_2{
+        margin-top: 760px;
     }
+
+    .down_btn{
+        position: relative;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        margin-top: 600px;
+        margin-left: 724px;
+    }
+
+
+    .main_2{
+        height: 10vh;
+        width: 10vw;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .book_images{
+        margin-top: 220px;
+        border: "0";
+        height: "50";
+        width: "30";
+
+    }
+
 
 </style>
 
@@ -116,7 +143,7 @@
         <!-- 파일 모든 경로 영어로 하기 -->
         <!-- 메인 -->
         <div class="main_1">
-            <img src="../Main/books-2596809.jpg">
+            <img src="../Main/BG1_bookshelves.jpg">
         </div>
 
         <header>
@@ -169,12 +196,23 @@
                 </ul>
         </nav> -->
         
-        <div class="main_2" id="main_2">
-            
+        <div class="down_btn" id="main_2 ">
+            <section id="main_2">
+                <a href="#main_2" id="down_btn"><img class="down_btn" src="../Main/down_btn.png" alt="down_btn" id="down_btn_img"></a>
+            </section>
         </div>
-        <section id="main_2">
-            <a href="#main_2" id="down_btn"><img class="down_btn" src="../Main/down_1.jpg" alt="down_btn" id="down_btn_img"></a>
-        </section>
+
+        <div class="main_2" id="main_2">
+            <div class="book_images">
+                <table>
+                    <tr>
+                        <th><img alt="" src="C:\teamproject\archibook\src\main\resources\static\images\trust.jpg" ></th>
+                        <th><img alt="" src="C:\teamproject\archibook\src\main\resources\static\images\travel.jpg"></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
 
     </body>
 </html>
