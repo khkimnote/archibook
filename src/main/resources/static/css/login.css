@@ -1,0 +1,45 @@
+.login_h1 {
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 30px;
+    margin: 0 30% 0 30%;
+    border-bottom: solid 7px #F5F4F5;
+}
+
+.input_id {
+    /*z-index:0;*/
+    margin-bottom: 3%;
+    font-family:inherit;
+    font-size:25px;
+}
+
+.input_pw {
+    margin-bottom: 5%;
+    font-family:inherit;
+    font-size:25px;
+}
+
+.primary {
+    width: 38%;
+    font-size: 20px;
+    font-family: inherit;
+    margin-bottom: 3%;
+    cursor:pointer;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+
+.primary1 {
+    width: 30%;
+    font-size: 18px;
+    font-family: inherit;
+    margin-right: 2.5%;
+    color: #746d96;
+    background-color: white;
+    cursor:pointer;
+}
+
+
+

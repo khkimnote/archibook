@@ -8,33 +8,48 @@
 <head>
     <title>아카이북 | 로그인</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/login.css">
 
 </head>
 <style>
 
 </style>
 <body class="homepage is-preload">
-<div id="page-wrapper">
 
-    <section>
-        <div class="wrapper">
-            <div class="inner">
+    <section class="main">
+        <header class="major">
+            <h1 class="login_h1">아카이북 로그인<img src="/images/qna.png" width="40" height="60"></h1>
+        </header>
 
-                <!-- Main -->
-                <section class="main">
-                    <header class="major">
-                        <h1 style="text-align:center;padding-bottom: 3%;font-size:30px;margin: 0 30% 0 30%; border-bottom: solid 7px #F5F4F5;">아카이북 로그인<img src="g" width="40" height="60"></h1>
-                    </header>
+        <form method="post" name="loginForm" action="/member/login">
+            <div style="display:flex; justify-content:space-evenly; color:black;">
 
+                <div>
+                    <div class="col-6 col-12-xsmall" style="width:100%">
+                        <p style="margin-bottom: 2%;"></p>
+                        <input class="input_id" type="text" name="memberId" id="memberId" value="" placeholder="아이디"/>
 
-                </section>
+                        <p style="margin-bottom: 2%;"></p>
+
+                        <input class="input_pw" type="password"  name="memberPw" id="memberPw" value="" placeholder="비밀번호"/>
+                        <div style="display: flex; width: 100%">
+                            <input class="primary" type="button" value="로그인"  onclick="check()"/>
+                        </div>
+                        <p style="margin-bottom: 2%;"></p>
+                    </div>
+                    <div>
+                        <input type="button" value="아이디 찾기" class="primary1" onclick="location.href='/member/findID'"/>
+                        <input type="button" value="비밀번호 찾기" class="primary1" onclick="location.href='/member/findPW'"/>
+                        <input type="button" value="회원가입" class="primary1" onclick="location.href='/member/join'"/>
+                    </div>
+                </div>
 
             </div>
-        </div>
+        </form>
     </section>
-
-
     <hr>
+
+
 
 
 
