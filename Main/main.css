@@ -1,0 +1,165 @@
+/*main.css*/
+
+* {
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+.frame{
+    background-color: white;
+    height: 2280px;
+    z-index: -999;
+}
+.main_1{
+    position: absolute; /* 22:55 */
+    margin-top: 55px;
+    /* 한 화면 세로 760px */
+}
+.main_1 img{
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url(../Main/books-2596809.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#describe{
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    border-radius: 5px;
+    border: 0;
+}
+
+#btn_group button{
+    border: 1px solid rosybrown;
+    background-color: rosybrown;
+    color: white;
+    padding: 10px;
+    left: 650px;
+    right: 650px;
+    cursor: pointer;
+}
+
+#btn_group button:hover{
+    color:rosybrown;
+    background-color: white;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    z-index: 2;
+
+    height: 15px;
+    padding: 20px;
+    color: black;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search{
+    position: absolute;
+    top: 10px;
+    left: 1100px;
+    width: 270px;
+    display: flex;
+}
+.search input{
+    width: 50%;
+    border: 1px solid rosybrown;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    right: 0px;
+    padding: 6px;
+    font-size: 14px;
+    margin: 0;
+}
+.search img{
+    position:absolute;
+    width: 30px;
+    top: 0px;
+    left:145px;
+    margin:0;
+    cursor: pointer;
+    background-color: rosybrown;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.menu:after{display:block; content:''; clear:both;}
+.menu > li{position:relative; float:left; margin-right:5px;}
+.menu > li > a{display:block; padding:0 15px; background:#333; height:40px; line-height:40px; color:#fff;}
+.menu > li:hover .menu_1 {display:block;}
+.menu > li:hover .menu_2 {display:block;}
+.menu .menu_1{display:none; position:relative; top:117px; left:-130; right:113px; text-align:center;}
+.menu .menu_1 a{display:block; padding:5px; background:#666; color:#fff;}
+.menu .menu_2{display:none; position:relative; top:-10px; left:0; right:0; text-align:center;}
+.menu .menu_2 a{display:block; padding:5px; background:red; color:#fff;}
+
+.down_btn{
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin-top: 300px;
+    margin-left: 360px;
+}
+
+
+.main_2{
+    position: absolute;
+    margin-top: 809px;
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.book_images{
+    margin-top: 220px;
+    border:0;
+    height: 50;
+    width: 30;
+}
+
+.book_image_1 img{
+    border: "0";
+    height: "50";
+    width: "30";
+}
+
+.main_3{
+    position: absolute;
+    margin-top: 1560px;
+    height: 100vh;
+    width: 100vw;
+    background-color: yellowgreen;
+}
+
+.contribution_list{
+    position: absolute;
+    margin-top:200px;
+    margin-left: 635px;
+}
+
+.contribution_list th{
+    background-color: white;
+}
+
+.contribution_list tr{
+    background-color: white;
+}
+
+.contribution_list td{
+    text-align: center;
+}
