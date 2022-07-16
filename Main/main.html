@@ -8,12 +8,16 @@
         color: black;
         list-style: none;
     }
+    .frame{
+        background-color: white;
+        height: 2280px;
+        z-index: -999;
+    }
     .main_1{
         position: absolute; /* 22:55 */
         top: 0px;
         padding-top: 20px;
         /* 한 화면 세로 760px */
-        height: 1520px;
     }
     .main_1 img{
         height: 100vh;
@@ -101,10 +105,6 @@
     .menu .menu_2{display:none; position:relative; top:-10px; left:0; right:0; text-align:center;}
     .menu .menu_2 a{display:block; padding:5px; background:red; color:#fff;}
 
-    .menu_2{
-        margin-top: 760px;
-    }
-
     .down_btn{
         position: relative;
         z-index: 1;
@@ -116,8 +116,11 @@
 
 
     .main_2{
-        height: 10vh;
-        width: 10vw;
+        position: absolute;
+        margin-top: -3040px;
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
@@ -127,7 +130,26 @@
         border: "0";
         height: "50";
         width: "30";
+    }
 
+    .book_image_1 img{
+        border: "0";
+        height: "50";
+        width: "30";
+    }
+
+    .main_3{
+        position: absolute;
+        margin-top: 760px;
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
+    }
+
+    .contribution_list{
+        position: absolute;
+        margin-top:100px;
+        margin-left: 300px;
     }
 
 
@@ -142,77 +164,141 @@
     <body>
         <!-- 파일 모든 경로 영어로 하기 -->
         <!-- 메인 -->
-        <div class="main_1">
-            <img src="../Main/BG1_bookshelves.jpg">
-        </div>
-
-        <header>
-            <h1>
-                <form action="#" method="POST">
-                    ArchiBook
-                </form>
-            </h1>
-            <nav>
-                <span>
+        <div class="frame">
+            <div class="main_1">
+                <img src="../Main/BG1_bookshelves.jpg">
+            </div>
+    
+            <header>
+                <h1>
                     <form action="#" method="POST">
-                        <div class="search">
-                            <input name="search" type="text" placeholder="검색어 입력" value="">
-                            <button><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"></button>
-                        </div>
+                        ArchiBook
                     </form>
-                </span>
-                <span>
-                    <form action="#" method="POST">
-                        <div class="describe" id="btn_group">
-                            <button id="describe">구독하기</button>
-                        </div>
-                    </form>
-                </span>
-                <ul class="menu">
-                    <li>
-                        <a href="#">Menu</a>
-                        <ul class="menu_1">
-                            <li><a href="#">내 정보 보기</a></li>
-                            <li><a href="#">회원정보 수정</a></li>
-                            <li><a href="#">신청게시판</a></li>
-                            <li><a href="#">회원탈퇴</a></li>
-                        </ul>
-                        <!-- <span>menu3</span> -->
-                        <ul class="menu_2">
-                            <li><a href="#">마이페이지...</a></li>
-                            <li><a href="#">Q&A</a></li>
-                            <li><a href="#">로그아웃</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- <span>menu3</span> -->
-            </nav>
-        </header>
-
-        <!-- <nav>
-            <h2 class="hidden">카테고리</h2>
-                <ul class="gnb">
-                    <li><a href="main_2">main2</a></li>
-                </ul>
-        </nav> -->
-        
-        <div class="down_btn" id="main_2 ">
-            <section id="main_2">
-                <a href="#main_2" id="down_btn"><img class="down_btn" src="../Main/down_btn.png" alt="down_btn" id="down_btn_img"></a>
-            </section>
-        </div>
-
-        <div class="main_2" id="main_2">
-            <div class="book_images">
-                <table>
-                    <tr>
-                        <th><img alt="" src="C:\teamproject\archibook\src\main\resources\static\images\trust.jpg" ></th>
-                        <th><img alt="" src="C:\teamproject\archibook\src\main\resources\static\images\travel.jpg"></th>
-                    </tr>
-                </table>
+                </h1>
+                <nav>
+                    <span>
+                        <form action="#" method="POST">
+                            <div class="search">
+                                <input name="search" type="text" placeholder="검색어 입력" value="">
+                                <button><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"></button>
+                            </div>
+                        </form>
+                    </span>
+                    <span>
+                        <form action="#" method="POST">
+                            <div class="describe" id="btn_group">
+                                <button id="describe">구독하기</button>
+                            </div>
+                        </form>
+                    </span>
+                    <ul class="menu">
+                        <li>
+                            <a href="#">Menu</a>
+                            <ul class="menu_1">
+                                <li><a href="#">내 정보 보기</a></li>
+                                <li><a href="#">회원정보 수정</a></li>
+                                <li><a href="#">신청게시판</a></li>
+                                <li><a href="#">회원탈퇴</a></li>
+                            </ul>
+                            <!-- <span>menu3</span> -->
+                            <ul class="menu_2">
+                                <li><a href="#">마이페이지...</a></li>
+                                <li><a href="#">Q&A</a></li>
+                                <li><a href="#">로그아웃</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <span>menu3</span> -->
+                </nav>
+            </header>
+    
+            <!-- <nav>
+                <h2 class="hidden">카테고리</h2>
+                    <ul class="gnb">
+                        <li><a href="main_2">main2</a></li>
+                    </ul>
+            </nav> -->
+            
+            <div class="down_btn" id="main_2 ">
+                <section id="main_2">
+                    <a href="#main_2" id="down_btn"><img class="down_btn" src="../Main/down_btn.png" alt="down_btn" id="down_btn_img"></a>
+                </section>
+            </div>
+    
+    
+            <div class="main_2" id="main_2">
+                <div>
+                    <table class="book_images">
+                        <tr>
+                            <th class="book_image_1"><img alt="" src="C:\teamproject\archibook\src\main\resources\static\images\trust.jpg" ></th>
+                            <th class="book_image_2"><img alt="" src="C:\teamproject\archibook\src\main\resources\static\images\travel.jpg"></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="main_3" id="main_3">
+                <div class="contribution_list">
+                    <table border="0" align="center">
+                        <th colspan="3" bgcolor="brown">기북천사와 함꼐하는 친구들은 명입니다.</th>
+                        <tr>
+                            <th>기관명</th>
+                            <th>전화번호</th>
+                            <th>사이트 주소</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
-        
-
     </body>
 </html>
