@@ -1,0 +1,67 @@
+.book{
+    list-style: none;    
+}
+
+.div_bookpic{
+    
+    height: 200px;
+}
+
+.book_pic1{
+    background-image: url("../../static/bookImages/01dream2.jpg");
+    background-repeat: no-repeat;
+    background-size: 130px;
+    /* background-color: #f7f7f7f7; */
+    /* border:1px solid #f7f7f7f7; */
+    border-color: white;
+    width: 130px;
+    height: 200px;
+    
+    /* width: auto; */
+}
+.book_pic2{
+    background-image: url("../../static/bookImages/01fully.jpg");    
+    background-repeat: no-repeat;
+    background-size: 130px;
+    width: 130px;
+    height: 200px;
+}
+.book_pic3{
+    background-image: url("../../static/bookImages/01imagine.jpg");    
+    background-repeat: no-repeat;
+    background-size: 130px;
+    width: 130px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

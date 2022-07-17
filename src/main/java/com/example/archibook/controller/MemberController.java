@@ -8,24 +8,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @Slf4j
-@RequestMapping("/main/*")
+@RequestMapping("/member/*")
 @RequiredArgsConstructor
-public class MainPageController {
+public class MemberController {
 
+    @GetMapping("login")
+    public String login(){
 
-    @GetMapping("mainPage")
-    public String list(){
-
-        return "main/mainPage";
+        return "member/login";
     }
 
-    @GetMapping("qna")
-    public String qna(){
+    @GetMapping("join")
+    public String join(){
 
-        return "main/qna";
+        return "member/join";
     }
-
-
-
 
 }
