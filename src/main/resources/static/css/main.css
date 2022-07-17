@@ -10,7 +10,7 @@
 }
 .frame{
     background-color: white;
-    height: 2280px;
+    height: 3040px;
     z-index: -999;
 }
 .main_1{
@@ -114,7 +114,6 @@ header{
     margin-left: 360px;
 }
 
-
 .main_2{
     position: absolute;
     margin-top: 809px;
@@ -125,22 +124,75 @@ header{
     background-attachment: fixed;
 }
 
-.book_images{
-    margin-top: 220px;
-    border:0;
-    height: 50;
-    width: 30;
+.book_images_1{
+    margin-top: 120px;
+    margin-left: 20px;
+    border:0px;
+    /*height: 50px;*/
+    /*width: 30px;*/
 }
 
-.book_image_1 img{
-    border: "0";
-    height: "50";
-    width: "30";
+.book_image_1{
+    border: 0px;
+    height: 230px;
+    width: auto;
+}
+
+.book_images_2{
+    margin-top: 70px;
+    margin-left: 20px;
+    border:0px;
+    /*height: 50px;*/
+    /*width: 30px;*/
+}
+
+.book_image_2{
+    border: 0px;
+    height: 230px;
+    width: auto;
 }
 
 .main_3{
     position: absolute;
-    margin-top: 1560px;
+    margin-top: 1562px;
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+}
+
+.book_cards{
+    position: relative;
+    margin-top: 150px;
+    margin-left: 25px;
+}
+
+.book_cards_2{
+    height: 100px;
+}
+
+.book_card{
+    height: 320px;
+    width: auto;
+    margin-right: -75px;
+    margin-left: -70px;
+    margin-top:10px;
+    clip-path: inset(0% 21% 0% 21% round 0%);
+    /*cursor: */
+}
+
+.prev{
+    height: 70px;
+    width: auto;
+}
+
+.next{
+    height: 70px;
+    width: auto;
+}
+
+.main_4{
+    position: absolute;
+    margin-top: 2316px;
     height: 100vh;
     width: 100vw;
     background-color: yellowgreen;
