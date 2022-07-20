@@ -1,26 +1,30 @@
 /*main.css*/
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     border-collapse: collapse;
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    text-align: center;
     color: black;
     list-style: none;
 }
 .frame{
     background-color: white;
-    height: 3040px;
+    height: 3015px;
     z-index: -999;
 }
 .main_1{
     position: absolute; /* 22:55 */
-    margin-top: 55px;
     /* 한 화면 세로 760px */
 }
 .main_1 img{
-    height: 100vh;
-    width: 100vw;
+    height: 753px;
+    width: 1519px;
     /* background-image: url(../Main/books-2596809.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,39 +32,53 @@
 }
 
 #describe{
-    position: absolute;
-    top: 10px;
-    left: 350px;
-    border-radius: 5px;
-    border: 0;
-}
-
-#btn_group button{
-    border: 1px solid rosybrown;
-    background-color: rosybrown;
-    color: white;
-    padding: 10px;
-    left: 650px;
-    right: 650px;
+    display: block;
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    border-radius: 60px;
+    border-collapse: collapse;
+    transform: translateX(-50%);
+    z-index: 100;
+    max-width: 450%;
+    width: 20%;
     cursor: pointer;
+    margin: 0 auto;
+    background: #333333;
+    color: #ffffff;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 5px 0;
+    min-height: 45px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 16%), 4px 8px 28px rgb(0 0 0 / 8%);
 }
 
-#btn_group button:hover{
-    color:rosybrown;
-    background-color: white;
-}
+/*#btn_group button{*/
+/*    border: 1px solid rosybrown;*/
+/*    background-color: rosybrown;*/
+/*    color: white;*/
+/*    padding: 10px;*/
+/*    left: 650px;*/
+/*    right: 650px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*#btn_group button:hover{*/
+/*    color:rosybrown;*/
+/*    background-color: white;*/
+/*}*/
 
 header{
     position: fixed;
     top: 0;
     left: 0; 
     right: 0;
-    z-index: 2;
+    z-index: 999;
 
-    height: 15px;
-    padding: 20px;
+    height: 60px;
     color: black;
-    background-color: brown;
+    background-color: hsla(0,0%,100%,.9);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,73 +129,111 @@ header{
     width: 100px;
     height: 100px;
     margin-top: 300px;
-    margin-left: 360px;
+    margin-left: 330px;
 }
+
+
+
+
+
+
 
 .main_2{
     position: absolute;
-    margin-top: 809px;
-    height: 100vh;
-    width: 100vw;
+    margin-top: 753px;
+    height: 753px;
+    width: 1519px;
     background-color: green;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.book_images_1{
-    margin-top: 120px;
-    margin-left: 20px;
-    border:0px;
-    /*height: 50px;*/
-    /*width: 30px;*/
+.swiper-container {
+    height:360px;
 }
 
-.book_image_1{
-    border: 0px;
-    height: 230px;
-    width: auto;
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform,-webkit-transform;
+    box-sizing: content-box;
 }
 
-.book_images_2{
-    margin-top: 70px;
-    margin-left: 20px;
-    border:0px;
-    /*height: 50px;*/
-    /*width: 30px;*/
+.swiper-slide {
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform, -webkit-transform;
+    text-align:center;
+    display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+    align-items:center; /* 위아래 기준 중앙정렬 */
+    justify-content:center; /* 좌우 기준 중앙정렬 */
+}
+.swiper-slide img {
+    box-shadow:0 0 5px #555;
+    max-width:100%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+    /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
 }
 
-.book_image_2{
-    border: 0px;
-    height: 230px;
-    width: auto;
-}
+
+
+
 
 .main_3{
     position: absolute;
-    margin-top: 1562px;
-    height: 100vh;
-    width: 100vw;
+    margin-top: 1506px;
+    height: 753px;
+    width: 1519px;
     background-color: red;
 }
 
-.book_cards{
-    position: relative;
-    margin-top: 150px;
-    margin-left: 25px;
+.main_3 ul{
+    list-style: none;
+    padding:0;
+    margin-left: 50%;
+    margin-top: 50%;
 }
 
-.book_cards_2{
-    height: 100px;
+.main_3 li{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border: 0;
+    float: left;
+}
+
+.main_3 li img{
+    float:left
+}
+
+.book_tags{
+    margin-top: 100px
+}
+
+.book_card_box{
+    position: relative;
+    margin-top: -70px;
+    left:27px;
+    top: 30%;
 }
 
 .book_card{
-    height: 320px;
+    margin-right: -160px;
+    height: 350px;
     width: auto;
-    margin-right: -75px;
-    margin-left: -70px;
-    margin-top:10px;
-    clip-path: inset(0% 21% 0% 21% round 0%);
-    /*cursor: */
+    clip-path: inset(5% 50% 5% 10% round 0%);
+    float: left;
+    border: #333333;
+}
+.book_card:hover{
+    position: relative;
+    /*width: 320px;*/
+    height: 350px;
+    left: -50px;
+    clip-path: inset(0% 5% 4% 5% round 0%);
+    z-index: 1;
 }
 
 .prev{
@@ -190,28 +246,55 @@ header{
     width: auto;
 }
 
+
+
+
+
+
+
+
 .main_4{
     position: absolute;
-    margin-top: 2316px;
-    height: 100vh;
-    width: 100vw;
+    margin-top: 2259px;
+    height: 756px;
+    width: 1519px;
     background-color: yellowgreen;
 }
 
 .contribution_list{
     position: absolute;
-    margin-top:200px;
-    margin-left: 635px;
+    left: 5%;
+    top: 10%;
+    height: 565px;
+    width: 1367px;
 }
 
-.contribution_list th{
-    background-color: white;
+.contribution_list table{
+    width: 100%;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
 }
 
-.contribution_list tr{
-    background-color: white;
+.contribution_list th, td{
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+    width: 500px;
+    height: 30px;
 }
 
-.contribution_list td{
-    text-align: center;
+.move_page{
+    position:absolute;
+    z-index: 1;
+    margin-top: 700px;
+    margin-left: 700px;
+    background: #ff8b77;
 }
+
+.move_btn{
+    height: 30px;
+    width: 25px;
+    margin:-3px;
+    /*border-radius: ;*/
+    cursor: pointer;
+}
+

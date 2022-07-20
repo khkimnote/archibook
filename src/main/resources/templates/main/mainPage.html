@@ -4,7 +4,9 @@
     <title>당신의 아카이북</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../static/css/main.css">
-
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 </head>
 
 <body class="homepage is-preload">
@@ -12,7 +14,7 @@
     <!-- 메인 -->
     <div class="frame">
         <div class="main_1">
-            <img src="../../static/bookImages/BG1_bookshelves.jpg">
+            <img src="..\..\static\images\BG1_bookshelves.jpg">
         </div>
 
         <header>
@@ -58,137 +60,163 @@
             </nav>
         </header>
 
-        <!-- <nav>
-            <h2 class="hidden">카테고리</h2>
-                <ul class="gnb">
-                    <li><a href="main_2">main2</a></li>
-                </ul>
-        </nav> -->
-        
+
+
+
+
         <div class="down_btn" id="main_2 ">
             <section id="main_2">
-                <a href="#main_2" id="down_btn"><img class="down_btn" src="..\..\static\images\down.gif" alt="down_btn" id="down_btn_img"></a>
+                <a href="#main_2" id="down_btn"><img class="down_btn" src="../../static/images/down.gif" alt="down_btn" id="down_btn_img"></a>
             </section>
         </div>
 
 
-        <div class="main_2" id="main_2">
-            <div>
-                <table class="book_images_1">
-                    <tr>
-                        <td><img class="prev" alt="" src="..\..\static\images\arrow-prev.png"></td>
-                        <th><img class="book_image_1" alt="" src="..\..\static\bookimages\01dream2.jpg" ></th>
-                        <th><img class="book_image_1" alt="" src="..\..\static\bookimages\01fully.jpg"></th>
-                        <th><img class="book_image_1" alt="" src="..\..\static\bookimages\01midnight.jpg"></th>
-                        <th><img class="book_image_1" alt="" src="..\..\static\bookimages\01tonight.jpg"></th>
-                        <th><img class="book_image_1" alt="" src="..\..\static\bookimages\02dream.jpg"></th>
-                        <th><img class="book_image_1" alt="" src="..\..\static\bookimages\02handson.jpg"></th>
-                        <th><img class="book_image_1" alt="" src="..\..\static\bookimages\02why.jpg"></th>
-                        <th><img class="book_image_1" alt="" src="..\..\static\bookimages\02yoriko.jpg"></th>
-                        <th><img class="book_image_1" alt="" src="..\..\static\bookimages\03express.jpg"></th>
-                        <td><img class="next" alt="" src="..\..\static\images\arrow-next.png"></td>
-                    </tr>
-                </table>
+        <div class="main_2" for="main_2">
+            <!-- 클래스명은 변경하면 안 됨 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../../static/bookImages/01dream2.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/01fully.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/01imagine.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/01midnight.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/01tonight.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/01imagine.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/02dream.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/02handson.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/02why.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/02yoriko.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/03express.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/03franken.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/03onebook.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/03swan.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/04clean.jpg"></div>
+                </div>
+
+                <!-- 네비게이션 -->
+                <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+
+                <!-- 페이징 -->
+                <div class="swiper-pagination"></div>
             </div>
 
-            <div>
-                <table class="book_images_2">
-                    <tr>
-                        <th><img class="prev" alt="" src="..\..\static\images\arrow-prev.png"></th>
-                        <th><img class="book_image_2" alt="" src="..\..\static\bookimages\01dream2.jpg" ></th>
-                        <th><img class="book_image_2" alt="" src="..\..\static\bookimages\01fully.jpg"></th>
-                        <th><img class="book_image_2" alt="" src="..\..\static\bookimages\01midnight.jpg"></th>
-                        <th><img class="book_image_2" alt="" src="..\..\static\bookimages\01tonight.jpg"></th>
-                        <th><img class="book_image_2" alt="" src="..\..\static\bookimages\02dream.jpg"></th>
-                        <th><img class="book_image_2" alt="" src="..\..\static\bookimages\02handson.jpg"></th>
-                        <th><img class="book_image_2" alt="" src="..\..\static\bookimages\02why.jpg"></th>
-                        <th><img class="book_image_2" alt="" src="..\..\static\bookimages\02yoriko.jpg"></th>
-                        <th><img class="book_image_2" alt="" src="..\..\static\bookimages\03express.jpg"></th>
-                        <th><img class="next" alt="" src="..\..\static\images\arrow-next.png"></th>
-                    </tr>
-                </table>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../../static/bookImages/01dream2.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/01fully.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/01imagine.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/01midnight.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/01tonight.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/01imagine.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/02dream.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/02handson.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/02why.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/02yoriko.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/03express.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/03franken.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/03onebook.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/03swan.jpg"></div>
+                    <div class="swiper-slide"><img src="../../static/bookImages/04clean.jpg"></div>
+                </div>
+
+                <!-- 네비게이션 -->
+                <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+
+                <!-- 페이징 -->
+                <div class="swiper-pagination"></div>
             </div>
+
+            <script>
+
+                new Swiper('.swiper-container', {
+
+                    slidesPerView : 5, // 동시에 보여줄 슬라이드 갯수
+                    spaceBetween : 10, // 슬라이드간 간격
+                    slidesPerGroup : 5, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
+
+                    // 그룹수가 맞지 않을 경우 빈칸으로 메우기
+                    // 3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬
+                    loopFillGroupWithBlank : true,
+
+                    loop : true, // 무한 반복
+
+                    pagination : { // 페이징
+                        el : '.swiper-pagination',
+                        clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+                    },
+                    navigation : { // 네비게이션
+                        nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+                        prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+                    },
+                });
+
+            </script>
         </div>
 
-       <div class="main_3" id="main_3">
-            <table>
-                <tr class="book_cards_2">
-                    <th>소설</th>
-                    <th>여행</th>
-                    <th>인문</th>
-                    <th>장르4</th>
-                    <th>정치/사회</th>
-                    <tr>
-                        <td><img class="book_card" alt="" src="..\..\static\bookimages\1knovel.jpg"></td>
-                        <td><img class="book_card" alt="" src="..\..\static\bookimages\1knovel.jpg"></td>
-                        <td><img class="book_card" alt="" src="..\..\static\bookimages\1knovel.jpg"></td>
-                        <td><img class="book_card" alt="" src="..\..\static\bookimages\1knovel.jpg"></td>
-                        <td><img class="book_card" alt="" src="..\..\static\bookimages\1knovel.jpg"></td>
-                    </tr>
+
+
+
+
+        <div class="main_3">
+            <h1>북카드</h1>
+            <h3>기북천사가 추천하는 장르별 책을 소개</h3>
+            <table class="book_card_box">
+                <tr>
+                    <th><img class="book_card" alt="" src="../../static/bookImages/3humanities.jpg" ></th>
+                    <th><img class="book_card" alt="" src="../../static/bookImages/4novel.jpg" ></th>
+                    <th><img class="book_card" alt="" src="../../static/bookImages/5society.jpg" ></th>
+                    <th><img class="book_card" alt="" src="../../static/bookImages/3humanities.jpg" ></th>
                 </tr>
             </table>
-       </div>
-        
+        </div>
+
+
+
+
+
         <div class="main_4" id="main_4">
             <div class="contribution_list">
-                <table>
-                    <th colspan="3">기북천사와 함꼐하는 친구들은 99명입니다.</th>
+                <table class="list">
+                    <thead>
                     <tr>
-                        <th>기관명</th>
-                        <th>전화번호</th>
-                        <th>사이트 주소</th>
+                        <th>기관명</th><th>전화번호</th><th>사이트 주소</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
+                        <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>2</td>
+                        <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
+                        <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>4</td>
-                        <td>4</td>
+                        <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5</td>
+                        <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td>6</td>
-                        <td>6</td>
+                        <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td>7</td>
-                        <td>7</td>
+                        <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
                     </tr>
                     <tr>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>8</td>
+                        <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
                     </tr>
                     <tr>
-                        <td>9</td>
-                        <td>9</td>
-                        <td>9</td>
+                        <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
                     </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>10</td>
-                        <td>10</td>
-                    </tr>
+                    </tbody>
                 </table>
+                <button>1</button>
             </div>
         </div>
     </div>
