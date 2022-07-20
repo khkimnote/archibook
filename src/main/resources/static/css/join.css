@@ -80,3 +80,13 @@ body{
 .joincancel{
     margin-left: 50px;
 }
+
+.lw { font-size: 60px; }
+.Idinput, input{
+  border-radius: 70px;
+}
+
+ .required:before{
+   content:" *";
+   color: red; 
+}

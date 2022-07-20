@@ -1,15 +1,27 @@
-.book{
+ /* 출처: https://juve.tistory.com/157 [Forza Juve!:티스토리] */
+.footer{
+    border: 3px solid gray;
+    margin:auto;
+    width: 40px;
+    text-align : center;  
+
+}
+#id_books{
+    padding-left: 30px;
+}
+ .book{
     list-style: none;    
 }
 
 .div_bookpic{
-    
     height: 200px;
 }
 
 .air{
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     padding-top: 30px;
+    border-top: 4px solid skyblue;
+    width: 750px;
 }
 
 .book_pic1{
@@ -54,12 +66,19 @@
     height: 200px;
 }
 
+.result{
+    padding-top: 100px;
+    padding-bottom: 0;
+    margin:0;
+    margin:auto;
+    text-align: center;
+}
+
 
 .paragraph{
     padding-left : 80px;
     margin-left: 80px;
 }
-
 
 .paragraph_fir{
     margin-top:90px;
