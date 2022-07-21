@@ -22,7 +22,8 @@ html{
     position: absolute; /* 22:55 */
     /* 한 화면 세로 760px */
 }
-.main_1 img{
+
+.main_1 .back_ground{
     height: 753px;
     width: 1519px;
     /* background-image: url(../Main/books-2596809.jpg); */
@@ -54,21 +55,6 @@ html{
     box-shadow: 0 4px 12px rgb(0 0 0 / 16%), 4px 8px 28px rgb(0 0 0 / 8%);
 }
 
-/*#btn_group button{*/
-/*    border: 1px solid rosybrown;*/
-/*    background-color: rosybrown;*/
-/*    color: white;*/
-/*    padding: 10px;*/
-/*    left: 650px;*/
-/*    right: 650px;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*#btn_group button:hover{*/
-/*    color:rosybrown;*/
-/*    background-color: white;*/
-/*}*/
-
 header{
     position: fixed;
     top: 0;
@@ -84,52 +70,101 @@ header{
     align-items: center;
 }
 
-.search{
-    position: absolute;
-    top: 10px;
-    left: 1100px;
-    width: 270px;
-    display: flex;
-}
-.search input{
-    width: 50%;
-    border: 1px solid rosybrown;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    right: 0px;
-    padding: 6px;
-    font-size: 14px;
-    margin: 0;
-}
+/*.search{*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    left: 1100px;*/
+/*    width: 270px;*/
+/*    display: flex;*/
+/*}*/
+
 .search img{
-    position:absolute;
-    width: 30px;
-    top: 0px;
-    left:145px;
-    margin:0;
+    position:relative;
+    max-width: 25px;
+    width: 20px;
+    right:67px;
+    top:30px;
     cursor: pointer;
-    background-color: rosybrown;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    padding: 3px;
 }
 
-.menu:after{display:block; content:''; clear:both;}
-.menu > li{position:relative; float:left; margin-right:5px;}
-.menu > li > a{display:block; padding:0 15px; background:#333; height:40px; line-height:40px; color:#fff;}
-.menu > li:hover .menu_1 {display:block;}
-.menu > li:hover .menu_2 {display:block;}
-.menu .menu_1{display:none; position:relative; top:117px; left:-130; right:113px; text-align:center;}
-.menu .menu_1 a{display:block; padding:5px; background:#666; color:#fff;}
-.menu .menu_2{display:none; position:relative; top:-10px; left:0; right:0; text-align:center;}
-.menu .menu_2 a{display:block; padding:5px; background:red; color:#fff;}
+.search img:hover{
+    border-style: none;
+    border-collapse: collapse;
+    background: #dfdfdf;
+}
 
-.down_btn{
+/*.menu:after{display:block; content:''; clear:both;}*/
+/*.menu > li{position:relative; float:left; margin-right:5px;}*/
+/*.menu > li > a{display:block; padding:0 15px;  height:40px; line-height:40px; color:#fff;}*/
+/*.menu > li:hover .menu_1 {display:block;}*/
+/*.menu > li:hover .menu_2 {display:block;}*/
+/*.menu .menu_1{display:none; position:relative; top:117px; left:-130px; right:113px; text-align:center;}*/
+/*.menu .menu_1 a{display:block; padding:5px; background:#666; color:#fff;}*/
+/*.menu .menu_2{display:none; position:relative; top:-10px; left:0; right:0; text-align:center;}*/
+/*.menu .menu_2 a{display:block; padding:5px; background:red; color:#fff;}*/
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background: #dfdfdf;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    bottom: 18px;
+    right: 0px;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
     position: absolute;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    margin-top: 300px;
-    margin-left: 330px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.hamberger_btn{
+    /*position: relative;*/
+    /*right:10px;*/
+    /*bottom: 10px;*/
+    background: none;
+    width: 30px;
+    height: auto;
+}
+
+/* PC DOWN 버튼 */
+#scrollDownPc {
+    display: none;
+    position: relative;
+    bottom: 150px; /* 브라우저 아래쪽 끝에서부터의 거리 */
+    cursor: pointer;
+    z-index: 99;
 }
 
 
@@ -140,7 +175,7 @@ header{
 
 .main_2{
     position: absolute;
-    margin-top: 753px;
+    top: 753px;
     height: 753px;
     width: 1519px;
     background-color: green;
@@ -215,7 +250,7 @@ header{
 .book_card_box{
     position: relative;
     margin-top: -70px;
-    left:27px;
+    left:44px;
     top: 30%;
 }
 
