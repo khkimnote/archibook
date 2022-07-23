@@ -1,0 +1,19 @@
+
+*{font-family: 'IBM Plex Sans KR', sans-serif;}
+
+#honggildong{
+    margin:auto;
+    text-align: center;
+    padding-left:300px;
+    padding-right:300px;
+    margin-top: 800px;
+}
+.gdpicture{
+    height:700px;
+    width:400px;
+    float:left;
+    display:inline-block;
+    vertical-align:top;
+    margin-top:800px;
+}
+
