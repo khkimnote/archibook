@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>비밀번호 찾기</title>
+    <meta charset="utf-8" />
+    <!-- 기본 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+</head>
+<style>
+       /* body 기본 폰트 전체 적용 */
+	   body{
+        font-family: 'Gowun Dodum', sans-serif;
+        color: #5b5b5b;
+    }
+
+    </style>
+  </head>
+  <form name="idfindscreen" method = "POST">
+    <div class = "search-title">
+        <h1>비밀번호 찾기<img src="/images/backgimg.jpg"></h1>
+    </div>
+<section class = "form-search">
+    <div class = "find-name">
+        <label>이름</label>
+        <input type="text" name="member_name" class = "btn-name" placeholder = "등록한 이름">
+    <br>
+	<br>
+    </div>
+    <div class = "find-phone">
+        <label>전화번호</label>
+        <input type="text" onKeyup = "addHypen(this);" name="member_phone" class = "btn-phone" placeholder = "휴대폰번호를 '-'없이 입력">
+    </div>
+    <br>
+    <div class = "find-id">
+        <label>아이디</label>
+        <input type="text" name="member_id" class = "btn-id" placeholder = "등록한 아이디">
+    <br>
+    </div>
+</section>
+<script>
+	function id_search() { 
+	 	var frm = document.idfindscreen;
+
+	 	if (frm.member_name.value.length < 1) {
+		  alert("이름을 입력해주세요");
+		  return;
+		 }
+
+		 if (frm.member_phone.value.length != 11) {
+			  alert("핸드폰번호를 정확하게 입력해주세요");
+			  return;
+		 }
+         if (frm.member_id.value.length < 3) {
+			  alert("아이디를 정확하게 입력해주세요");
+			  return;
+		 }
+
+	 frm.method = "post";
+	 frm.action = "aaa"; //넘어간화면
+	 frm.submit();  
+	 }
+</script>
+<div class ="btnSearch">
+<input type="button" name="enter" value="찾기"  onClick="id_search()">
+<input type="button" name="cancle" value="취소" onClick="history.back()">
+</div>
+</form>
+
+</html>
