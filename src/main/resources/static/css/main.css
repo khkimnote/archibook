@@ -162,7 +162,7 @@ header{
 #scrollDownPc {
     display: none;
     position: relative;
-    bottom: 150px; /* 브라우저 아래쪽 끝에서부터의 거리 */
+    bottom: 170px; /* 브라우저 아래쪽 끝에서부터의 거리 */
     cursor: pointer;
     z-index: 99;
 }

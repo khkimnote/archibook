@@ -1,0 +1,146 @@
+.QnA{
+    /*background-image: url("../Images/BG2_books.jpg");*/
+    /*height: 597px;*/
+    /*width: 843px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
+    margin-top:20px;
+}
+
+.FqA{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Lato,NotoSansKR,Apple SD Gothic Neo,Malgun Gothic,sans-serif;
+}
+
+.FqA > h2 {
+    font-weight: 700;
+    font-size:49px;
+    line-height: 130%;
+    letter-spacing: -.01em;
+    color: #242424;
+    text-align: center;
+    margin-top: 40px;
+    /*opacity: 1;*/
+}
+
+.FqA > li{
+    padding: 10px 0;
+    margin-left: 35px;
+    box-sizing: border-box;
+    max-width: 700px;
+    width: 700px;
+    display: block;
+    float: left;
+
+}
+.FqA li:active{
+    transition: max-height 1s;
+    max-height: 500px;
+}
+.FqA > li:nth-child(n+2){ /* 아이템 구분 점선 */
+    border-top: 1px dashed #aaa;
+}
+.FqA input {
+    display: none;
+}
+
+.FqA label { /* 제목 - 클릭 영역 */
+    font-weight: bold;
+    color: #000;
+    margin: 20px 0 0;
+    cursor: pointer;
+}
+.FqA label::before { /* 제목 앞 화살표 */
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left: 8px solid #a00;
+    margin: 2px 0 0 8px;
+    float: left;
+}
+.FqA input:checked + label::before { /* 내용 펼침 상태 제목 앞 화살표 */
+    border: 8px solid transparent;
+    border-top: 8px solid #a00;
+    border-bottom: 0;
+    margin: 8px 4px 0;
+}
+
+.FqA div { /* 내용 영역 - 기본 감춤 상태 */
+    display: none;
+    color: #666;
+    font-size: 0.9375em;
+    overflow: hidden;
+    padding: 10px 0 10px 30px;
+    box-sizing: border-box;
+    transition: max-height 0.4s;
+}
+.FqA input:checked + label + div { /* 내용 영역 펼침 */
+    display: block;
+}
+
+.container{
+    display: block;
+    text-align: center;
+    font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 330px;
+}
+
+.container-inner{
+    display: block;
+    text-align: center;
+    font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.submit_title{
+    display: block;
+    max-width: 380px;
+    margin: 0 auto 20px;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 1.2px;
+}
+
+.submit_subtitle{
+    display: block;
+    max-width: 500px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1.4px;
+}
+
+.submit_btn{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    letter-spacing: 1.2px;
+    padding: 11px calc(12px * 2) 9px;
+    font-size: 10px;
+    line-height: 1.6;
+    border-radius: 0;
+    user-select: none;
+    min-width: 240px;
+    background-color: #e4373c;
+    /*border-color: #e4373c;*/
+    color: #fff;
+}
