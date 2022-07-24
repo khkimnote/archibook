@@ -4,3 +4,39 @@
     height:100px;
 
 }
+.search-title {
+    /*margin: 500px;
+*/
+    taxt-align:center;
+}
+
+a:visited{
+    color: white;
+    padding: 14px 25px;
+    taxt-align:center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: blue;
+}
+body{
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #5b5b5b;
+}
+.find{
+    color: white;
+    padding: 14px 25px;
+    taxt-align:center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+}
+.cancel{
+    color: white;
+    padding: 14px 25px;
+    taxt-align:center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: gray;
+}

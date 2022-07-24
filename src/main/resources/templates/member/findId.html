@@ -7,16 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/findId.css">
+
 
 </head>
-<style>
-       /* body 기본 폰트 전체 적용 */
-	   body{
-        font-family: 'Gowun Dodum', sans-serif;
-        color: #5b5b5b;
-    }
-    </style>
-  </head>
   <div>
     <div class = "search-title">
         <h1>아이디 찾기<img class="img_turtle" src="/images/backgimg.jpg"></h1>
@@ -24,12 +18,14 @@
 <section class = "form-search">
     <div class = "find-name">
         <label>이름</label>
+        <br>
         <input type="text" name="member_name" class = "btn-name" placeholder = "등록한 이름">
     <br>
 	<br>
     </div>
     <div class = "find-phone">
         <label>전화번호</label>
+        <br>
         <input type="text" onKeyup = "addHypen(this);" name="member_phone" class = "btn-phone" placeholder = "휴대폰번호를 '-'없이 입력">
     </div>
     <br>
@@ -55,8 +51,9 @@
 	 }
 </script>
 <div class ="btnSearch">
-<input><!--버튼:클릭시 기능나오게-->
-<input><!--버튼:클릭시 기능나오게-->
+    <a href="findPw.html" target="_blank" class="find" >찾기</a>
+    <a href="login.html" target="_blank" class="cancel">취소</a>
+
 </div>
 </div>
 
