@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
 <head>
     <title>아이디 찾기</title>
     <meta charset="utf-8" />
@@ -11,50 +11,58 @@
 
 
 </head>
-  <div>
-    <div class = "search-title">
-        <h1>아이디 찾기<img class="img_turtle" src="/images/backgimg.jpg"></h1>
+<body>
+  <div class="div_paragraph">
+    <div>
+        <h1>아이디 찾기</h1>
     </div>
-<section class = "form-search">
+<section class = "form-search menu">
     <div class = "find-name">
-        <label>이름</label>
-        <br>
-        <input type="text" name="member_name" class = "btn-name" placeholder = "등록한 이름">
+        <h2><label style="margin-right:500px;">이름</label></h2>
+    </div>
+    <div>
+        <input type="text" name="member_name" class="btn-name" >
+    </div>
     <br>
 	<br>
+    <div class = "find-phone menu">
+        <h2> <label style="margin-right:470px;">전화번호</label></h2>
     </div>
-    <div class = "find-phone">
-        <label>전화번호</label>
-        <br>
-        <input type="text" onKeyup = "addHypen(this);" name="member_phone" class = "btn-phone" placeholder = "휴대폰번호를 '-'없이 입력">
+    <div>
+        <input type="text" name="member_phone" class="input_btn btn-phone" placeholder = "가입시 등록한 번호를 입력해주세요">
+        <a href="aaa" target="_blank" class="mini-btn nb-get" >인증번호 받기</a>
     </div>
     <br>
+    <div class = "get-number">
+        <input type="text" name="member_number" class="input_btn btn-number" placeholder = "인증번호를 입력해주세요">
+        <a href="aaa" target="_blank" class="mini-btn nb-check" >인증번호 확인</a>
+        <br>
+    </div>
 </section>
+      <br>
+      <br>
+      <br>
+<div class ="btnSearch" >
+    <a href="findPw" target="_blank" class="mini-btn check" onclick="id_search()">확인 </a>
+    <a href="login" target="_blank" class="mini-btn cancel">취소 </a>
+</div>
+</div>
+</body>
 <script>
-	/*20220723 추후 javascript 따로 생성예정*/
-    function id_search() {
-	 	var frm = document.idfindscreen;
+    function id_search(){
+        if (frm.member_name.value.length < 1) {
+            alert("이름을 입력해주세요");
+            return;
+        }
 
-	 	if (frm.member_name.value.length < 1) {
-		  alert("이름을 입력해주세요");
-		  return;
-		 }
+          if (frm.member_phone.value.length !== 11) {
+            alert("핸드폰번호를 정확하게 입력해주세요");
+            return;
+          }
 
-		 if (frm.member_phone.value.length != 11) {
-			  alert("핸드폰번호를 정확하게 입력해주세요");
-			  return;
-		 }
-
-	 frm.method = "post";
-	 frm.action = "aaa"; //넘어간화면
-	 frm.submit();  
-	 }
+        frm.method = "post";
+        frm.action = "aaa"; //넘어간화면
+        frm.submit();
+    }
 </script>
-<div class ="btnSearch">
-    <a href="findPw" target="_blank" class="find" >찾기</a>
-    <a href="login" target="_blank" class="cancel">취소</a>
-
-</div>
-</div>
-
 </html>

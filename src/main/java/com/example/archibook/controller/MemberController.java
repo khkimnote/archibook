@@ -34,6 +34,10 @@ public class MemberController {
 
     }
 
+    @GetMapping("findPw")
+    public String findPw() {
+        return "member/findPw";
 
+
+    }
 }
-

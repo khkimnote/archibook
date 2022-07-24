@@ -4,18 +4,44 @@ body{
     taxt-align:center;
 }
 .div_paragraph{
-    margin-top:250px;
+    margin-top:180px;
     text-align:center;
 }
-.btn-name{
+.input_btn1{
     width:550px;
     height:35px;
     border-radius: 10px;
 }
-.input_btn{
+.input_btn2{
     width:400px;
     height:35px;
     border-radius: 10px;
+}
+.abc{
+    taxt-align:center;
+    color:black;
+}
+.id-check{
+    line-height: 50px;
+    width:280px;
+    height:50px;
+    margin-top:50px;
+    color: white;
+    taxt-align:center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+}
+.id-cancel{
+    line-height: 50px;
+    width:280px;
+    height:50px;
+    margin-top:50px;
+    color: white;
+    taxt-align:center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: gray;
 }
 .mini-btn{
     border-radius: 10px;
