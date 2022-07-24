@@ -1,6 +1,9 @@
-.img_turtle{
+.img_turtle {
     /*background-image: url("/images/backgimg.jpg");*/
-    width:100px;
-    height:100px;
-
+    width: 100px;
+    height: 100px;
+}
+.center{
+    width: 500px;
+    margin: 0 auto;
 }
