@@ -29,8 +29,8 @@ body{
 }
 
 .main_1 .back_ground{
-    height: 753px;
-    width: 1519px;
+    height: 819px;
+    width: 1688px;
     /* background-image: url(../Main/books-2596809.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -180,9 +180,9 @@ header{
 
 .main_2{
     position: absolute;
-    top: 753px;
-    height: 753px;
-    width: 1519px;
+    top: 819px;
+    height: 819px;
+    width: 1688px;
     background-color: green;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -224,9 +224,9 @@ header{
 
 .main_3{
     position: absolute;
-    margin-top: 1506px;
-    height: 753px;
-    width: 1519px;
+    margin-top: 1618px;
+    height: 819px;
+    width: 1688px;
     background-color: red;
 }
 
@@ -295,9 +295,9 @@ header{
 
 .main_4{
     position: absolute;
-    margin-top: 2259px;
-    height: 756px;
-    width: 1519px;
+    margin-top: 2457px;
+    height: 819px;
+    width: 1688px;
     background-color: yellowgreen;
 }
 

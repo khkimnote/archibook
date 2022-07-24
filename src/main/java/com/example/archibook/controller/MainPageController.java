@@ -12,14 +12,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequiredArgsConstructor
 public class MainPageController {
 
-
     @GetMapping("mainPage")
     public String list(){
 
         return "main/mainPage";
     }
 
+// url: localhost:10010/QnA
+    @GetMapping("QnA")
+    public String QnA(){
+        return "main/QnA";
+    }
 
-
+    @GetMapping("qna_mail")
+    public String QnA_mail(){
+        return "main/qna_mail";
+    }
 
 }
