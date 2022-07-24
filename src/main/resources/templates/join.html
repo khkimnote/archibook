@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--
+   Helios by Pixelarity
+   pixelarity.com | hello@pixelarity.com
+   License: pixelarity.com/license
+-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>아카이북 | 회원가입</title>
+    <link rel="stylesheet" href="../../static/css/join.css">
+    <link rel="stylesheet" href="../../static/css/main.css">
+
+</head>
+
+<body class="homepage is-preload">
+<div id="page-wrapper">
+
+    <section>
+        <div class="wrapper">
+            <div class="inner">
+
+                <!-- Main -->
+
+                <section class="main">
+                    <form action="">
+                        <div class="radio">
+                            <input type="radio" name= "conBus" id="cons">
+                            <label for="cons"> 일반회원</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio"  name= "conBus" id="buss">
+                            <label for="buss"> 기업회원</label>
+                        </div>
+
+                        <p class= "id required">아이디</p>
+                        <input class ="idpw" type="text" placeholder="6자 이상의 영문과 숫자를 조합">
+                        <p class = "pw required">비밀번호</p>
+                        <input class ="idpw" type="password" placeholder="영문 4자이상, 최대 20자">
+                        <p class ="nm required">이름</p>
+                        <input class ="name" type="text">
+
+
+                        <p class ="nm required">핸드폰 번호</p>
+                        <input class ="number" type="text" maxlength="13" placeholder="핸드폰번호">
+                        <button class = "receive "> 인증번호 받기 </button>
+                        <input class ="number" type="text" maxlength="13" placeholder="인증번호를 입력하세요">
+                        <button class = "check"> 인증번호 확인 </button>
+
+                        <input type="submit" class= "joinend" value="가입 완료">
+                        <input type="button" class= "joincancel" value="취소">
+
+
+
+
+
+                    </form>
+
+
+                </section>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <hr>
+
+
+
+
+</body>
+
+</html>

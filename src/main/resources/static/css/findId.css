@@ -18,7 +18,7 @@ a:visited{
     display: inline-block;
 }
 a:hover, a:active {
-    background-color: blue;
+    background-color: black;
 }
 body{
     font-family: 'Gowun Dodum', sans-serif;
