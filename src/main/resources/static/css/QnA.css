@@ -1,3 +1,8 @@
+body{
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #5b5b5b;
+}
+
 .QnA{
     /*background-image: url("../Images/BG2_books.jpg");*/
     /*height: 597px;*/
@@ -12,7 +17,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: Lato,NotoSansKR,Apple SD Gothic Neo,Malgun Gothic,sans-serif;
 }
 
 .FqA > h2 {
@@ -86,7 +90,6 @@
 .container{
     display: block;
     text-align: center;
-    font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
@@ -141,6 +144,5 @@
     user-select: none;
     min-width: 240px;
     background-color: #e4373c;
-    /*border-color: #e4373c;*/
     color: #fff;
 }

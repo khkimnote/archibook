@@ -4,6 +4,11 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #5b5b5b;
+}
+
 * {
     border-collapse: collapse;
     margin: 0px;

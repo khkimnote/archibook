@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q&A_mail</title>
+    <link rel="stylesheet" href="../static/css/qna_mail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+<body onload="window.resizeTo(400,400)">
+
+    <h5>제목</h5>
+    <input type="text" placeholder="문의합니다.">
+    <h5>내용</h5>
+    <p><textarea cols="50" rows="10"></textarea></p>
+
+
+    <form action="#"><input type="button" value="발송" onclick="moveClose();"/></form>
+    <input type="button" value="닫기" onclick="self.close();"/>
+
+    <script>
+        function moveClose() {
+            opener.location.href="mail_send_success.html";
+            self.close();
+        }
+    </script>
+</body>
+</html>
