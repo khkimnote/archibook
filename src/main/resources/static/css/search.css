@@ -25,7 +25,7 @@
 }
 
 .book_pic1{
-    background-image: url("../../static/bookImages/01dream2.jpg");
+    background-image: url("/bookImages/01dream2.jpg");
     background-repeat: no-repeat;
     background-size: 130px;
     /* background-color: #f7f7f7f7; */
@@ -37,21 +37,21 @@
     /* width: auto; */
 }
 .book_pic2{
-    background-image: url("../../static/bookImages/01fully.jpg");    
+    background-image: url("/bookImages/01fully.jpg");
     background-repeat: no-repeat;
     background-size: 130px;
     width: 130px;
     height: 200px;
 }
 .book_pic3{
-    background-image: url("../../static/bookImages/01imagine.jpg");    
+    background-image: url("/bookImages/01imagine.jpg");
     background-repeat: no-repeat;
     background-size: 130px;
     width: 130px;
     height: 200px;
 }
 .book_pic4{
-    background-image: url(../../static/bookImages/01midnight.jpg);    
+    background-image: url(/bookImages/01midnight.jpg);
     background-repeat: no-repeat;
     background-size: 130px;
     width: 130px;
@@ -59,7 +59,7 @@
 }
 
 .book_pic5{
-    background-image: url(../../static/bookImages/01tonight.jpg);    
+    background-image: url(/bookImages/01tonight.jpg);
     background-repeat: no-repeat;
     background-size: 130px;
     width: 130px;
