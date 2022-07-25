@@ -24,6 +24,7 @@ public class MemberController {
         return "member/join";
     }
 
+
     @GetMapping("mypage")
     public String mypage(){
 
