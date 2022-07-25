@@ -1,0 +1,393 @@
+<!DOCTYPE HTML>
+<!--
+   Helios by Pixelarity
+   pixelarity.com | hello@pixelarity.com
+   License: pixelarity.com/license
+-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>기북천사 | 마이페이지</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/myPage.css" />
+    <noscript> <link rel="stylesheet" href="/css/noscript.css" /> </noscript>
+
+    <!-- 책 접었다 폈다 더보기 부분 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Codrops" />
+
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+
+    <!-- logo 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <!-- underLogo 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <!-- 기본 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    /* body 기본 폰트 전체 적용 */
+    body {
+        font-family: 'Gowun Dodum', sans-serif;
+    }
+
+    #logo {
+        font-family: 'East Sea Dokdo', cursive;
+        font-size: 100px;
+    }
+
+    #underLogo {
+        font-family: 'Yeon Sung', cursive;
+        font-size: 100px;
+    }
+</style>
+<body class="homepage is-preload">
+<div id="page-wrapper">
+
+    <!-- 헤더부분 메인에서 맞춰서 가져올것! 메인에서 페이징 작업은 디자인 완료후 처리 해주어야 한다. -->
+    <!--Header-->
+    <div id="header">
+        <!-- Nav --> <!-- 상단탭(아마 모든 분들이 쓰셔야 할 코드..) -->
+        
+
+    </div>
+    <!-- 마이페이지(회원 및 기업 정보표시) -->
+
+
+    <div class="table-wrapper" style="margin-top: 7%; margin-bottom: 7%;margin-left:auto; margin-right:auto; width: 100%"  th:object="${myInfo}">
+       <div style="width: 80%; margin: auto;">
+        <div>
+            <h2 style="font-size: 25px; display: inline;padding:1% 1% 1% 18%; display: inline; float: left" th:text="|*{memberId}님의 정보입니다. 변경을 원하시면 정보수정을 눌러주세요|"></h2>
+        </div>
+        <input class="btn" type="button" value="수정하기" style=" display: inline; float: right; position: absolute; margin-top: 1%; margin-left: 1%;" onclick="location.href='/member/memberModify'">
+        <!-- <div style="display:flex; justify-content:space-between;">
+                          </div> -->
+
+        <!-- 개인/기관 회원 정보 -->
+        <table style="text-align: center; ">
+            <!--                                  <caption style="text-align:left; margin-bottom:3%;">
+            </caption>-->
+
+            <tbody>
+            <tr>
+                <td rowspan="5" class="col" style="background-color: #CEB980;"></td>
+                <td class="tdFirst">아이디</td>
+                <td th:text="*{memberId}"></td>
+                <td rowspan="5" class="col" style="background-color: #CEB980;"></td>
+            </tr>
+            <tr>
+                <td class="tdFirst">이름</td>
+                <td th:text="*{memberName}"></td>
+            </tr>
+            <tr>
+                <td class="tdFirst">전화번호</td>
+                <td th:text="*{memberTel}"></td>
+            </tr>
+            <tr>
+                <td class="tdFirst">이메일</td>
+                <td th:text="*{memberEmail}"></td>
+            </tr>
+            <tr>
+                <td class="tdFirst">주소</td>
+                <td th:text="|*{memberAddress} *{memberAddressDetail}|"></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <table style="font-size: 1.3rem">
+            <tr align="center" valign="middle">
+            </tr>
+        </table>
+        <div id="sub" th:if="${sessionType}==0">
+            <h2 style="font-size: 25px; display: inline; padding:0 18%">이용권</h2>
+            <table style="text-align: center;">
+                <thead>
+                <tr style="background-color: #ceb980">
+                    <th style="width: 50%;" class="tdFirst">이용권/유효기간</th>
+                </tr>
+                </thead>
+                <tbody style="border-right:hidden;">
+                <tr>
+                    <td class="td tdFirst">구독 사용 정보</td>
+                </tr>
+                <tr>
+                    <td class="tdFirst">
+
+                        <div>
+                            <th:block th:if="${sub}=='true'">
+                                <div>
+                                    <p style="text-align: center;" th:text="|${startSub} ~ ${endSub}|"></p>
+                                </div>
+                                <div th:if="${end}!=0">
+                                    <input class="btn" type="button" value="구독취소" onclick="subscribeCancel()">
+                                </div>
+                            </th:block>
+                            <th:block th:if="${sub}=='false'">
+                                <div>
+                                    <p style="text-align: center;">구독정보가 없습니다.</p>
+                                </div>
+                                <div>
+                                    <input class="btn" type="button" value="구독하기" onclick="location.href='/payment/subscribe'">
+                                </div>
+                            </th:block>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div> <!-- 추가 -->
+
+        </th:block>
+
+        <th:block th:if="${sessionType}==1">
+            <div>
+                <h2 style="font-size: 25px; display: inline; padding:0 18%">쿠폰</h2>
+                <table style="text-align: center;">
+                    <!-- <caption style="text-align:left; margin-bottom:3%;">
+                    </caption>-->
+
+
+                    <thead>
+                    <tr style="background-color: #ceb980">
+                        <th style="width: 50%;">쿠폰/수량</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>쿠폰 / 수량</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div th:text="|보유쿠폰 ${myCouponCnt}개|"></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div> <!-- 추가 -->
+
+        </th:block>
+       </div>
+
+
+
+
+        <!-- 슬라이드 -->
+        <!--  Carousel -->
+
+
+        <section id="basketForm" class="carousel" th:if="${sessionType}==0">
+            <p id="category" style="font-size: 30px; margin-left: 2.5%;">나의 책가방</p>
+            <div class="reel">
+
+                <th:block th:if="${myBaskets}!='null'">
+                    <th:block  th:each="b, i:${myBaskets}">
+                        <article class="grid cs-style-4"  th:id="${i.index}">
+                            <figure>
+                                <div>
+                                    <input type="hidden" th:value="${b.bookNum}" th:class="${i.index}">
+                                    <img th:src="|/bookImages/${b.bookImageSrc}|" height="262" width="175" alt="">
+                                </div>
+                                <figcaption style="width:100%">
+                                    <div style="margin-top: 25%;">
+                                        <span>
+                                            <p style="margin-bottom: 0;">바로읽기</p>
+                                            <a id="read" href="#popUp" target="_self" onclick="openPop()">
+                                            <img src="/images/ebookread.png" /></a>
+                                        </span>
+                                        <span>
+                                            <p style="margin-bottom: 0;">삭제하기</p> <a th:onclick="|deleteBook(${i.index})|" id="more" ><img
+                                                src="/images/book.png" width="20px"height="20px" /></a>
+                                        </span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </th:block>
+                </th:block>
+                <th:block th:if="${myBaskets}=='null'">
+                    <div style="display: flex;justify-content: center; margin-top: 8%;margin-bottom: 8%"><h5 style="font-weight: 900;font-size: 45px;">아직 들어있는 책이 없어요!</h5></div>
+                </th:block>
+            </div>
+        </section>
+
+
+
+        <!-- 쿠폰리스트 -->
+        <br>
+        <div id="couponForm" th:if="${sessionType}==1"> <!-- 추가 -->
+            <div style="width: 65%; height: 3em; margin: 0 auto;">
+                <h2 style="font-size: 25px; display: inline; float: left;margin-right: 0;">쿠폰 보관함</h2>
+            </div>
+            <table style="text-align: center;">
+                <thead>
+                <tr style="background-color: #ceb980">
+                    <th class="tdFirst">번호</th>
+                    <th class="tdFirst">쿠폰번호</th>
+                    <th>사용 유무</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <th:block th:if="${coupons}!='null'">
+                    <th:block th:each="c, i:${coupons}">
+                        <tr>
+                            <td >
+                                <span th:text="${i.index+1}"></span>
+                            </td>
+                            <td>
+                                <span th:text="${c.couponName}"></span>
+                            </td>
+                            <td>
+                                 <th:block th:if="${c.couponStatus}==0">
+                                     <span>O</span>
+                                 </th:block>
+                                 <th:block th:if="${c.couponStatus}==1">
+                                    <span>X</span>
+                                 </th:block>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                </th:block>
+                </th:block>
+                <th:block th:if="${coupons}=='null'">
+                    <tr>
+                        <td colspan="5" align="center">등록된 쿠폰이 없습니다.</td>
+                    </tr>
+                </th:block>
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    <!--  Copyright -->
+
+    <div class="copyright" style="height: 10em">
+        <hr>
+        <p style="margin-bottom: 0.5em; font-weight: 600; font-size: 20px; margin-left: 0.5em;text-align: left;font-size: 16px;">기북천사</p>
+        <p style="margin-bottom: 0.2em;margin-left: 0.5em;text-align: left;font-size: 16px;">대표자 : 한동석, 일사천리 &nbsp;&nbsp; 주소: 서울특별시 강남구 역삼동 736-7 3~4층</p>
+        <label for="intro" style="margin-bottom: 0.2em;margin-left: 0.5em;text-align: left;font-size: 16px;"><a style="text-decoration: none" id="intro" href="/main/introduce">기북천사 소개</a></label>
+        <p style="margin-bottom: 0.2em;margin-left: 0.5em;text-align: left;font-size: 16px;">&copy; Kibook Angel. All rights reserved.</p>
+    </div>
+
+</div>
+
+
+
+<!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.dropotron.min.js"></script>
+<script src="/js/jquery.scrolly.min.js"></script>
+<script src="/js/jquery.scrollex.min.js"></script>
+<script src="/js/browser.min.js"></script>
+<script src="/js/breakpoints.min.js"></script>
+<script src="/js/util.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/modernizr.custom.js"></script>
+<script src="/js/toucheffects.js"></script>
+</body>
+<!-- 검색 -->
+
+<script th:inline="javascript">
+    var memberNum = [[${memberNum}]];
+    function subscribeCancel(){
+        $.ajax({
+            url:"/member/subscribeCancel",
+            type:"post",
+            data:{"memberNum":memberNum},
+            success: function(result){
+                if(result=="success") {
+                    alert("구독 취소 완료! \n남은 기간동안 사용이 가능합니다.");
+                }
+            }
+        });
+    }
+    let sessionType = [[${sessionType}]];
+    var applyTab = $("li#applyTab");
+
+    if(sessionType == 0){
+        applyTab.css("display","none");
+    } else if(sessionType == 1){
+        applyTab.css("display","inline");
+    }
+
+
+    // 책읽기 띄우기
+    function openPop(){
+        let sub = [[${sub}]];
+            if(sub == "false" || memberNum  == null){
+                alert("구독한 회원만 읽을 수 있습니다.");
+                return false;
+            } else if(sub == "true" || memberNum  != null){
+                window.open('/main/dreamBook', '기북천사 뷰어', 'width=800px,height=900px,scrollbars=yes');
+            }
+        }
+
+
+
+    // <!--kkh 2021.11.03 새로 작성한 코드-->
+    // 글 등록 시 전달받는 게시글 번호를 alert으로 출력
+    let searchForm = $(document.searchForm);
+
+
+    $("button.search").on("click", function(e){  /*$("a.search").on("click", function(e){*/
+        e.preventDefault();
+
+
+        if(!searchForm.find("input#keyword").val()){
+            alert("키워드를 입력하세요");
+            return;
+        }
+        searchForm.submit();
+    });
+
+    $("input#keyword").on("keydown", function(e){
+        if(e.keyCode == 13){
+            e.preventDefault();
+            if(!searchForm.find("input#keyword").val()){
+                alert("키워드를 입력하세요");
+                return;
+            }
+            searchForm.submit();
+        }
+    })
+    function deleteBook(index) {
+        var bookNum = $('input.'+index).val();
+        $.ajax({
+            url:"/member/pickBookCancel",
+            type:"post",
+            data:{"memberNum":memberNum,"bookNum":bookNum},
+            success:function (result) {
+                if(result=="success"){
+                    alert("삭제가 완료됐습니다.");
+                    $("article#"+index).remove();
+                }if(result=="none"){
+                    alert("삭제가 완료됐습니다.");
+                    $("article#"+index).remove();
+                    var str = ""
+                    str +="<div style='display: flex;justify-content: center; margin-top: 8%;margin-bottom: 8%'>"
+                    str +="<h5 style='font-weight: 900;font-size: 45px;'>"
+                    str +="아직 들어있는 책이 없어요!</h5></div>"
+                    $("div.reel").html(str);
+                }
+            }
+        })
+    }
+</script>
+</html>
