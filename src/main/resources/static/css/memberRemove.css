@@ -1,0 +1,26 @@
+body{
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #5b5b5b;
+    taxt-align:center;
+}
+.div_paragraph {
+    margin-top: 250px;
+    text-align: center;
+}
+.mini-btn{
+    border-radius: 10px;
+    line-height: 50px;
+    width:280px;
+    height:50px;
+    color: white;
+    margin-top:50px;
+    taxt-align:center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+}
+.btn-name{
+    width:600px;
+    height:50px;
+    border-radius: 10px;
+}

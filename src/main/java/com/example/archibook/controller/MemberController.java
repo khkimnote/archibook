@@ -40,4 +40,13 @@ public class MemberController {
 
 
     }
-}
+
+    @GetMapping("memberRemove")
+    public String memberRemove() {
+        return "member/memberRemove";
+
+
+    }
+
+
+    }
