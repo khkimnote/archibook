@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SubscribeDetail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/subscribedetail.css">
+</head>
+<body>
+    <h3>결제 상세 정보</h3>
+    <h4>정기구독</h4>
+    <div class="duration">구독기간 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+        <div class="duration" id="start_date"></div>~
+        <div class="duration" id="end_date"></div>
+        <script>
+            date = new Date();
+            year = date.getFullYear();
+            month = date.getMonth() + 1;
+            day = date.getDate();
+            document.getElementById("start_date").innerHTML = year + "-" + month + "-" + day;
+        </script>
+        <script>
+            date = new Date();
+            year = date.getFullYear(); // 만약 12월에 해서 년도가 넘어가야 할 경우
+            month = date.getMonth() + 2;
+            day = date.getDate();
+            document.getElementById("end_date").innerHTML = year + "-" + month + "-" + day;
+        </script>
+    <br>
+         다음 결제일 &nbsp; |
+        <div class="duration" id="next_date"></div>
+        <script>
+            date = new Date();
+            year = date.getFullYear(); // 만약 12월에 해서 년도가 넘어가야 할 경우
+            month = date.getMonth() + 2;
+            day = date.getDate() + 1;
+            document.getElementById("end_date").innerHTML = year + "-" + month + "-" + day;
+        </script>
+    </div>
+    <h4>결제금액</h4>
+
+    <div class="price_info">
+        <div class="price_text">상품금액</div>
+        <div class="price">9,900</div>
+        <div class="price_text">할인금액</div>
+        <!--        만약 첫 달일 경우 "첫 달 100원 (-) 9,800-->
+        <div class="price"> - </div>
+        <div class="price_text">총 결제금액</div>
+        <div class="price">9,900</div>
+    </div>
+
+    <h4>결제수단</h4>
+    <div class="payment_btn">
+        <form class="payment_1" action="#" method="POST">
+            <button class="payment_1" id="coupon">쿠폰</button>
+        </form>
+        <form class="payment_1" action="#" method="POST">
+            <button class="payment_1" id="card">카드</button>
+        </form>
+    </div>
+
+    <div class="check">
+        <input type="checkbox" id="select1"><label for="select1">
+        [필수]자동결제 상품임을 인자하였으며 취소/환불, 소득공제 정책 등 상품 구매 정책에 동의합니다.
+        </label><br>
+        <input type="checkbox" id="select2"><label for="select2">
+        [필수]개인정보 수집 및 이용에 동의합니다.
+        </label>
+    </div>
+    <form action="#" method="POST">
+        <button class="payment_2" id="payment">결제하기</button>
+    </form>
+
+</body>
+</html>

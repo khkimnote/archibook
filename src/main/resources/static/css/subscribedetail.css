@@ -1,0 +1,91 @@
+body{
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #5b5b5b;
+}
+
+h3{
+    text-align: center;
+}
+
+h4{
+
+}
+
+.duration{
+    display: inline;
+}
+
+.price_info{
+    display: inline-block;
+    width:695px;
+    height: 190px;
+    border: 1px solid darkgray;
+    border-radius: 30px;
+
+}
+
+.price{
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px
+}
+
+.price_text{
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 350px;
+}
+
+.payment_btn{
+    text-align: center;
+}
+
+.payment_1{
+    display: inline;
+    width: 345px;
+    height: 40px;
+    background-color: white;
+    border-color: #e4373c;
+    border-collapse: collapse;
+
+    left: 50%;
+    border-radius: 5px;
+    /*transform: translateX(-50%);*/
+    max-width: 450%;
+    cursor: pointer;
+    margin: 0 auto;
+    /*background: burlywood;*/
+    line-height: 24px;
+    font-size: 16px;
+    padding: 5px 0;
+    min-height: 45px;
+    /*box-shadow: 0 4px 12px rgb(0 0 0 / 16%), 4px 8px 28px rgb(0 0 0 / 8%);*/
+}
+
+.payment_2{
+    display: block;
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    border-radius: 60px;
+    border-collapse: collapse;
+    transform: translateX(-50%);
+    z-index: 100;
+    max-width: 450%;
+    width: 20%;
+    cursor: pointer;
+    margin: 0 auto;
+    background: burlywood;
+    color: #ffffff;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 5px 0;
+    min-height: 45px;
+    text-align: center;
+    /*box-shadow: 0 4px 12px rgb(0 0 0 / 16%), 4px 8px 28px rgb(0 0 0 / 8%);*/
+}
+
+label{
+    cursor: pointer;
+}
