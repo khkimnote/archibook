@@ -44,13 +44,32 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.oracle.database.jdbc</groupId>
             <artifactId>ojdbc8</artifactId>
             <scope>runtime</scope>
+        </dependency>-->
+
+
+        <!--20220725 kkh-->
+        <!-- ******************  -->
+        <!-- mysql     시작          -->
+        <!-- ******************  -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
         </dependency>
 
-        <!--원격 디비 전자지갑 -->
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+        </dependency>
+        <!-- mysql     끝          -->
+
+<!--
+
+        원격 디비 전자지갑
         <dependency>
             <groupId>com.oracle.ojdbc</groupId>
             <artifactId>ucp</artifactId>
@@ -67,7 +86,8 @@
             <groupId>com.oracle.database.security</groupId>
             <artifactId>osdt_cert</artifactId>
         </dependency>
-        <!--원격 디비 끝-->
+        원격 디비 끝
+-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
