@@ -48,5 +48,17 @@ public class MemberController {
 
     }
 
+    @GetMapping("MemberModify1")
+    public String MemberModify1() {
+        return "member/MemberModify1";
+    }
+
+    @GetMapping("MemberModify2")
+    public String MemberModify2() {
+        return "member/MemberModify2";
+
+    }
+
+
 
     }

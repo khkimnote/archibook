@@ -1,0 +1,28 @@
+body{
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #5b5b5b;
+    taxt-align:center;
+}
+
+.div_paragraph {
+    margin-top: 250px;
+    text-align: center;
+}
+
+.mini-btn {
+    border-radius: 10px;
+}
+
+.nb-get{
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+}
+
+.btn-check {
+    width:370px;
+    height:35px;
+    border-radius: 10px;
+}

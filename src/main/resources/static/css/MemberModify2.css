@@ -1,0 +1,48 @@
+body{
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #5b5b5b;
+    taxt-align:center;
+    margin-bottom:250px;
+}
+.div_paragraph{
+    margin-top:180px;
+    text-align:center;
+}
+.input_btn1{
+    width:400px;
+    height:35px;
+    border-radius: 10px;
+}
+.btn-phone{
+    width:300px;
+    height:35px;
+    border-radius: 10px;
+}
+.btn-ad{
+    width:300px;
+    height:35px;
+    border-radius: 10px;
+}
+.mini-btn{
+    border-radius: 10px;
+    line-height: 50px;
+    width:100px;
+    height:50px;
+    color: white;
+    taxt-align:center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+}
+.btn{
+    border-radius: 10px;
+    line-height: 50px;
+    width:280px;
+    height:50px;
+    color: white;
+    margin-top:50px;
+    taxt-align:center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+}
